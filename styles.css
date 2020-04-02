@@ -1,0 +1,349 @@
+:root {
+    --pink: hsl(322, 100%, 66%);
+    --very-pale-cyan: hsl(193, 100%, 96%);
+    --very-dark-cyan: hsl(192, 100%, 9%);
+    --grayish-blue: hsl(208, 11%, 55%);
+}
+
+* {
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: lightyellow;
+    font-size: 12px;
+}
+
+.main__image, .features__image {
+    width: 100%;
+}
+
+.main__title, .features__subtitle, .footer__subtitle {
+    font-family: 'Poppins', sans-serif;
+}
+
+@media screen and (min-width: 375px) {
+    .header {
+        background-image: url('images/bg-hero-mobile.svg');
+        background-repeat: no-repeat;
+        background-color: var(--very-pale-cyan);
+        padding-bottom: 42px;
+    }
+
+    .header__top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 28px 20px 0;
+    }
+
+    .header__logo {
+        width: 120px;
+    }
+
+    .header__link {
+        background-color: white;
+        padding: 5px 24px;
+        border-radius: 25px;
+        box-shadow: 0 4px 10px 0px lightgray;
+        font-size: 12px;
+        font-weight: 700;
+        color: black;
+        text-decoration: none;
+    }
+
+    .main {
+        margin: 0 18px;
+    }
+
+    .main__detail {
+        text-align: center;
+        margin: 48px 0;
+    }
+
+    .main__title {
+        font-size: 28px
+    }
+
+    .main__text {
+        margin: 36px 0;
+    }
+
+    .main__link {
+        background-color: var(--pink);
+        padding: 12px 64px;
+        border-radius: 25px;
+        font-size: 16px;
+        color: white;
+        text-decoration: none;
+    }
+
+    .features {
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 1800px;
+        padding: 40px 0 0;
+    }
+
+    .features__card {
+        width: 85%;
+        background-color: white;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        margin: 28px 0;
+        padding: 40px 36px;
+        box-sizing: border-box;
+        border-radius: 10px;
+        box-shadow: 0 0 6px 4px whitesmoke;
+        text-align: center;
+    }
+
+    .features__subtitle {
+        margin-top: 40px;
+        font-size: 20px;
+    }
+
+    .features__text {
+        font-size: 14px;
+        color: var(--grayish-blue);
+    }
+
+    .features__image {
+        height: 204px;
+        object-fit: contain;
+    }
+
+    .footer {
+        background-color: var(--very-dark-cyan);
+        position: relative;
+        padding: 0 18px 20px;
+    }
+
+    .footer__box {
+        width: 95%;
+        background-color: white;
+        position: absolute;
+        top: -132px;
+        left: 50%;
+        transform: translate(-50%, 0);
+        padding: 42px 24px;
+        box-shadow: 0 0 2px 2px whitesmoke;
+        border-radius: 12px;
+        box-sizing: border-box;
+        text-align: center;
+    }
+
+    .footer__subtitle {
+        font-size: 18px;
+        margin-bottom: 28px;
+    }
+
+    .footer__button {
+        background-color: var(--pink);
+        padding: 12px 64px;
+        border-radius: 25px;
+        font-size: 12px;
+        font-weight: 700;
+        color: white;
+        text-decoration: none;
+    }
+
+    .footer__logo {
+        width: 180px;
+        margin-top: 120px;
+    }
+
+    .footer__links {
+        color: white;
+    }
+
+    .footer__contact, .footer__info, .footer__socials {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    .footer__contact {
+        margin: 18px 0 62px;
+    }
+
+    .footer__location, .footer__phone, .footer__email {
+        display: flex;
+        align-items: flex-start;
+        margin: 26px 0;
+    }
+
+    .footer__icon {
+        margin-top: 8px;
+        margin-right: 18px;
+    }
+
+    .footer__text {
+        margin: 0;
+    }
+
+    .footer__item {
+        margin: 14px 0;
+    }
+
+    .footer__socials {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 40px 0;
+    }
+
+    .footer__social {
+        border: 1px solid white;
+        border-radius: 50%;
+        padding: 8px;
+        margin: 0 5px;
+    }
+
+    .footer__link {
+        display: flex;
+    }
+
+    .footer__image {
+        width: 20px;
+    }
+
+    .footer__bottom {
+        color: white;
+        text-align: center;
+    }
+
+    .footer__copyright {
+        font-size: 8px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .header__logo {
+        width: 180px;
+    }
+
+    .header__link {
+        padding: 8px 38px;
+        font-size: 16px;
+    }
+
+    .main {
+        display: flex;
+        align-items: center;
+        padding: 80px 40px;
+    }
+
+    .main__image {
+        width: 56%;
+    }
+
+    .main__detail {
+        margin-right: 20px;
+        text-align: left;
+    }
+
+    .main__title {
+        margin-top: 0;
+        font-size: 42px;
+    }
+
+    .main__text {
+        margin-bottom: 62px;
+    }
+
+    .main__link {
+        padding: 18px 64px;
+        border-radius: 32px;
+        font-weight: 700;
+    }
+
+    .features__card {
+        width: 85%;
+        flex-direction: row;
+    }
+
+    .features__card:nth-child(2) {
+        flex-direction: row-reverse;
+    }
+
+    .features__detail {
+        margin: 0 75px;
+        text-align: left;
+    }
+
+    .features__card:nth-child(2) .features__detail {
+        margin: 0;
+        margin-left: 140px;
+    }
+
+    .features__subtitle {
+        font-size: 36px;
+    }
+
+    .features__text {
+        width: 90%;
+        font-size: 18px;
+    }
+
+    .features__image {
+        width: 40%;
+        height: 342px;
+    }
+
+    .footer {
+        padding: 0 86px 20px;
+    }
+
+    .footer__logo {
+        margin-left: 110px;
+    }
+
+    .footer__box {
+        width: 50%;
+    }
+
+    .footer__links {
+        display: flex;
+        justify-content: space-evenly;
+        margin: 40px 0;
+    }
+
+    .footer__contact {
+        width: 32%;
+        margin: 0;
+    }
+
+    .footer__location, .footer__phone, .footer__email,
+    .footer__contact, .footer__info, .footer__socials {
+        margin: 20px 0;
+    }
+
+    .footer__socials {
+        align-items: start;
+    }
+
+    .footer__social {
+        margin: 20px 5px;
+    }
+
+    .footer__bottom {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
